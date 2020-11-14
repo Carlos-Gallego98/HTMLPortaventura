@@ -1,0 +1,37 @@
+#banner{
+    margin-top:50px;
+    position: relative;
+}
+#banner img{
+    width: 100%;
+    height: 100%;
+}
+#banner .contenedor{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+	font-family: brittanic bold;
+	color: #00a8ec;
+	font-size: 28px;
+	font-weight: bolder;
+	text-shadow: 1px 1px 2px black;
+	
+}
+#banner h2{
+    font-size: 20px;
+}
+#banner a{
+    display: block;
+    width: 400px;
+    color: chartreuse;
+    font-weight: bolder;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    border: 3px solid #fff;
+}
+#banner a:hover{
+    background: rgba(51,51,51,0.5)
+}
