@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Contenido grafico</title>
+        <link rel="stylesheet" href="css/portaventura_2.css">
+        <link rel="stylesheet" href="css/fontello.css">
+		<!--<script src="Js/jquery-3.3.1.js"></script>-->	<!--Añadimos la libreria jquery en el proyecto-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>	<!--Enlace a la librería de jquery-->
+	<script src="Js/jquery.slides.js"></script>
+	<script src="Js/jquery-1.6.3.min.js"></script>
+	<script>
+$(document).ready(function() {
+ $('#gallery img').each(function() {
+	var imgFile = $(this).attr('src');
+	var preloadImage = new Image();
+  	var imgExt = /(\.\w{3,4}$)/;
+ 	 preloadImage.src = imgFile.replace(imgExt,'_h$1');
+		
+	$(this).hover(
+		function() {
+			$(this).attr('src', preloadImage.src);
+		},
+		function () {
+			$(this).attr('src', imgFile);
+		}
+	); // end hover
+}); // end each
+}); // end ready
+	</script>
+    </head>
+    
+    <body>
+        <header>
+            <div class="contenedor">
+                <img src="img/parque.jpg" width="80" height="80">
+                <h1>PortAventura: Parque temático</h1>
+                
+                <input type="checkbox" id="barramenus">
+                <label class="icon-menu" for="barramenus"></label>
+                <nav class="menu">
+					<a href="index.html">Inicio</a>
+					<a href="contacta.html">Contacta</a>
+                    <a id="portaventura" href="https://www.portaventuraworld.com">PortAventura World</a>
+                    <a id="park" href="https://www.portaventuraworld.com/portaventura">PortAventura Park</a>
+                    <a id="ferrari" href="https://www.portaventuraworld.com/ferrari-land">PortAventura Ferrari Land</a>
+                    <a id="caribe" href="https://www.portaventuraworld.com/aquatic-park">PortAventura Caribe Aquatic Park</a>
+
+                </nav>
+            </div>
+        </header>
+		<br><br><br>
+        <main>
+	
+			
+			<section id="visual">
+                <div class="video-wrapper">
+                    <div class="container">
+                        <video controls>
+                            <source src="img/PortAventuraWorld.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </section>
+			
+			<div id="gallery"> 
+				<a href="img/01_h.jpg"><img src="img/01.jpg" width="200" height="200" alt="dragon-khan"></a>
+				<a href="img/02_h.jpg"><img src="img/02.jpg" width="200" height="200" alt="teatro"></a>
+				<a href="img/03_h.jpg"><img src="img/03.jpg" width="200" height="200" alt="hurakan-condor"></a>
+				<a href="img/04_h.jpg"><img src="img/04.jpg" width="200" height="200" alt="mediterrania"></a>
+				<a href="img/05_h.jpg"><img src="img/05.jpg" width="200" height="200" alt="red-force"></a>
+				<a href="img/06_h.jpg"><img src="img/06.jpg" width="200" height="200" alt="sesamoaventura"></a>
+			</div>
+			
+
+<a id="volver" href="index.html">Volver</a>	
+	
+		<footer>
+			<h2>©COPYRIGHT Construcción de páginas modernas, S.A.</h2>
+		</footer>
+        </main>  
+        
+    </body>
+</html>

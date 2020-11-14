@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Contacta</title>
+	<link rel="stylesheet"   href="css/contacta.css"/>   
+    <link rel="stylesheet" href="css/portaventura.css">
+   <link rel="stylesheet" href="css/fontello.css">
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		main{
+		background:#f2f2f2;
+		width: 90%;
+		margin: auto;
+		text-align: justify;
+		padding	: 25px 15px;	
+		}
+		h1, {
+			text-align: center;
+		}
+		h2{
+			text-align: center;
+		}
+		.main{
+			width:90%;
+			max-width:1000px;
+			margin:20px auto;	/*auto me lo situa en el centro*/
+		}
+		
+	</style>
+		<!--<script src="Js/jquery-3.3.1.js"></script>-->	<!--Añadimos la libreria jquery en el proyecto-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>	<!--Enlace a la librería de jquery-->
+	<script src="Js/jquery.slides.js"></script>
+	<script src="js/validar.js"></script> 
+	
+</head>
+<body>
+
+<header>
+            <div class="contenedor">
+                <img src="img/parque.jpg" width="80" height="80">
+                <h1>PortAventura: Parque temático</h1>
+                
+                <input type="checkbox" id="barramenus">
+                <label class="icon-menu" for="barramenus"></label>
+                <nav class="menu">
+					<a href="index.html">Inicio</a>
+					<a href="Contenido grafico.html">Contenido grafico e imagenes</a>
+                    <a id="portaventura" href="https://www.portaventuraworld.com">PortAventura World</a>
+                    <a id="park" href="https://www.portaventuraworld.com/portaventura">PortAventura Park</a>
+                    <a id="ferrari" href="https://www.portaventuraworld.com/ferrari-land">PortAventura Ferrari Land</a>
+                    <a id="caribe" href="https://www.portaventuraworld.com/aquatic-park">PortAventura Caribe Aquatic Park</a>
+                </nav>
+            </div>
+</header>
+<br><br><br><br>	
+<h1>CONTACTA</h1>
+<br><br><br><br><br>
+<form action="" method="GET" class="form-registro" onsubmit="return validar();"> <!--ACTION es la pagina php que va a recibir mi datos de clientes -->
+<!--METHOD POST para que los datos se guarden en un php-->    
+    <h2 class="form-titulo">CREA TU CUENTA</h2>
+    <div class="contenedor-inputs">
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre" class="input-48">    
+    
+        <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" class="input-48">
+
+        <input type="text" id="DNI" name="DNI" placeholder="DNI" class="input-48">
+
+        <input type="text" id="correo" name="correo" placeholder="Correo electronico" class="input-100">
+        
+        <input type="text" id="usuario" name="usuario" placeholder="Usuario" class="input-48">
+        
+        <input type="password" id="clave" name="clave" placeholder="Contraseña" class="input-48">
+        
+        <input type="text" id="telefono" name="telefono" placeholder="Telefono" class="input-48">
+        
+        <input type="submit" class="btn-enviar"  value="Registrar" onclick="">
+        
+        <p class="form-link">¿Ya tienes una cuenta?<a href="#">Ingresa aqui</a></p>
+    </div> 
+</form>
+    
+<a id="volver" href="index.html">Volver</a>
+
+</body>
+ </html>

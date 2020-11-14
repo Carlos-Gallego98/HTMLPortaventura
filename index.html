@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Index</title>
+        <link rel="stylesheet" href="css/portaventura.css">
+        <link rel="stylesheet" href="css/fontello.css">
+		<!--<script src="Js/jquery-3.3.1.js"></script>-->	<!--Añadimos la libreria jquery en el proyecto-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>	<!--Enlace a la librería de jquery-->
+	<script src="Js/jquery.slides.js"></script>
+	<script src="Js/portaventuraslider.js"></script>	
+    </head>
+    
+    <body>
+        <header>
+            <div class="contenedor">
+                <img src="img/parque.jpg" width="80" height="80">
+                <h1>PortAventura: Parque temático</h1>
+                
+                <input type="checkbox" id="barramenus">
+                <label class="icon-menu" for="barramenus"></label>
+                <nav class="menu">
+					<a id="contacta" href="contacta.html">Contacta</a>
+					<a id="contenido" href="Contenido grafico.html">Contenido grafico e imagenes</a>
+                    <a id="portaventura" href="https://www.portaventuraworld.com">PortAventura World</a>
+                    <a id="park" href="https://www.portaventuraworld.com/portaventura">PortAventura Park</a>
+                    <a id="ferrari" href="https://www.portaventuraworld.com/ferrari-land">PortAventura Ferrari Land</a>
+                    <a id="caribe" href="https://www.portaventuraworld.com/aquatic-park">PortAventura Caribe Aquatic Park</a>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+			
+		
+		<div id="anuncio">
+				<div class="barra">
+					PORTAVENTURA WORLD
+				<p id="cerrar" style="background: #000; position: relative; padding-top: 0px; font-size: 24px; color:#fff; width: 22px; height: 30px; text-align: left;">x</P>
+				</div>
+				<br>
+				<div> 
+				<p id="disfrutar">
+				Ven a disfrutar de Portaventura Park
+				Un parque donde te esperan muchas atracciones, experiencias,
+				Ah! No te olvides de visitar PortAventura Ferrari Land,
+				PortAventura Caribe Aquatic Park. PORTAVENTURA es un mundo de experiencias unicas! En SALOU, Tarragona </p>
+				</div>
+		</div>
+		
+		<br><br><br>
+		<div id="descripcion">
+			<p>
+				<h4>
+				PortAventura World es un parque de atracciones que esta en Tarragona, es el parque temático más visitado de España y el sexto de Europa.
+				Consta de 2 parques temáticos (PortAventura Park y Ferrari Land) y un parque acuático (PortAventura Caribe Aquatic Park).
+				El 7 de abril de 2017 se inauguró una nueva ampliación, Ferrari Land, el único parque temático de Ferrari en Europa y el segundo en el mundo.
+				</h4>
+			</p>
+			
+		</div>
+
+		
+			<section>
+				<div class="main">
+					<div class="slides">
+						<img src="img/01_h.jpg">
+						<img src="img/02_h.jpg">
+						<img src="img/03_h.jpg">
+						<img src="img/04_h.jpg">
+						<img src="img/05_h.jpg">
+						<img src="img/06_h.jpg">
+					</div>
+				</div>
+			</section>
+			
+
+					
+	<script>
+	  $(document).ready(function(){
+            var c =document.getElementById("cerrar");
+			var a =document.getElementById("anuncio");
+            c.addEventListener("click",cerrarBanner,false);
+        })
+
+        function cerrarBanner(){
+            $("#anuncio").remove();
+        }
+	</script>
+		<br><br><br><br>
+	
+		<footer>
+			<h2>©COPYRIGHT Construcción de páginas modernas, S.A.</h2>
+		</footer>
+        </main>  
+        
+    </body>
+</html>
